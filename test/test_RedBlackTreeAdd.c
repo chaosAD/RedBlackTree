@@ -26,7 +26,7 @@ void tearDown(void) {}
  *         NULL              10(b)
  */
 void test_addRedBlackTree_add_10_to_empty_tree(void) {
-	setNode(&node10, NULL, NULL, 'r');
+  setNode(&node10, NULL, NULL, 'r');
   Node *root = NULL;
 
   addRedBlackTree(&root, &node10);
@@ -45,7 +45,7 @@ void test_addRedBlackTree_add_10_to_empty_tree(void) {
  *                       5(r)
  */
 void test_addRedBlackTree_add_5_to_tree_with_root_10(void) {
-	setNode(&node10, NULL, NULL, 'b');
+  setNode(&node10, NULL, NULL, 'b');
   setNode(&node5, NULL, NULL, 'r');
   Node *root = &node10;
 
@@ -64,7 +64,7 @@ void test_addRedBlackTree_add_5_to_tree_with_root_10(void) {
  *                           13(r)
  */
 void test_addRedBlackTree_add_13_to_tree_with_root_10(void) {
-	setNode(&node10, NULL, NULL, 'b');
+  setNode(&node10, NULL, NULL, 'b');
   setNode(&node13, NULL, NULL, 'r');
   Node *root = &node10;
 
@@ -83,7 +83,7 @@ void test_addRedBlackTree_add_13_to_tree_with_root_10(void) {
  *        5(r)           1(r)   10(r)
  */
 void test_addRedBlackTree_add_1_to_tree_with_5_10_nodes(void) {
-	setNode(&node1, NULL, NULL, 'r');
+  setNode(&node1, NULL, NULL, 'r');
   setNode(&node5, NULL, NULL, 'r');
   setNode(&node10, &node5, NULL, 'b');
   Node *root = &node10;

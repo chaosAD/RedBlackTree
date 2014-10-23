@@ -28,7 +28,7 @@ void tearDown(void) {}
  *      1
  */
 void test_rightRotate_3_nodes(void) {
-	setNode(&node1, NULL, NULL, 'b');
+  setNode(&node1, NULL, NULL, 'b');
   setNode(&node5, &node1, NULL, 'b');
   setNode(&node10, &node5, NULL, 'b');
   Node *root = &node10;
@@ -56,7 +56,7 @@ void test_rightRotate_3_nodes(void) {
  *      1  8             8
  */
 void test_rightRotate_4_nodes(void) {
-	setNode(&node1, NULL, NULL, 'b');
+  setNode(&node1, NULL, NULL, 'b');
   setNode(&node8, NULL, NULL, 'b');
   setNode(&node5, &node1, &node8, 'b');
   setNode(&node10, &node5, NULL, 'b');
